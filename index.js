@@ -72,7 +72,6 @@ function loadCmds3() {
     })
 };
 loadCmds();
-loadCmds2();
 loadCmds3();
 
 bot.on('message', async message => {
