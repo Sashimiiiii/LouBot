@@ -144,4 +144,4 @@ if(cmd) cmd.run(bot, message, args);
 
 
 
-bot.login("OTIyNTIxODk2ODU0MTEwMjM5.YcCrdw.0IY4kNh1w5GekrWZcGtOa25J2OU")
+bot.login(process.env.TOKEN)
