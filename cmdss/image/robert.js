@@ -65,16 +65,16 @@ var user = message.author.tag
         var today = new Date();
         var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
         var date = today.getDate()+'/'+(today.getMonth()+1);
-        console.log("[ROBERT] " + user + " a utilisé Robert avec le texte " + args[0] + " | " + time + " Le " + date)
+        console.log("[ROBERT] " + user + " used Robert with " + args[0] + " | " + time + " on " + date)
 
         if (message.guild.id == 730433603808264192) {
         
         
         
             const channel = message.guild.channels.cache.get("795755947879825408")
-            channel.send("[ROBERT] " + user + " a utilisé Robert avec le texte " + args[0] + " | " + time + " Le " + date);
+            channel.send("[ROBERT] " + user + " used Robert with " + args[0] + " | " + time + " on " + date)
         }
-        bot.guilds.cache.get("554674515028738050").channels.cache.get("803747020522782720").send("[ROBERT] " + user + " a utilisé Robert avec le texte " + args[0] + " | " + time + " Le " + date);
+        bot.guilds.cache.get("554674515028738050").channels.cache.get("803747020522782720").send("[ROBERT] " + user + " used Robert with " + args[0] + " | " + time + " on " + date)
 
 }
  

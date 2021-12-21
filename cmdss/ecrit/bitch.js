@@ -30,13 +30,13 @@ module.exports.run = async (bot, message, member) => {
     var today = new Date();
     var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     var date = today.getDate()+'/'+(today.getMonth()+1);
-    console.log("[ADIEU] " + user + " a utiliser Adieu | " + time + " Le " + date)
+    console.log("[Bitch] " + user + " used Bitch | " + time + " on " + date)
     
     if (message.guild.id == 730433603808264192) {
-        channel.send("[ADIEU] " + user + " a utiliser Adieu | " + time + " Le " + date);
+        channel.send("[Bitch] " + user + " used Bitch | " + time + " on " + date)
     }
 
-    bot.guilds.cache.get("554674515028738050").channels.cache.get("803747020522782720").send("[ADIEU] " + user + " a utiliser Adieu | " + time + " Le " + date)
+    bot.guilds.cache.get("554674515028738050").channels.cache.get("803747020522782720").send("[Bitch] " + user + " used Bitch | " + time + " on " + date)
     
 }
 

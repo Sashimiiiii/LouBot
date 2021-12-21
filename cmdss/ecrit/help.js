@@ -56,10 +56,10 @@ module.exports.run = async (bot, message, args) => {
 		var date = today.getDate()+'/'+(today.getMonth()+1);
 		
 		if (message.guild.id == 730433603808264192) {
-            channel.send("[HELP] " + user + " a utiliser Help | " + time + " Le " + date);
+            channel.send("[HELP] " + user + " used Help | " + time + " on " + date);
 		}
 
-		bot.guilds.cache.get("554674515028738050").channels.cache.get("803747020522782720").send("[HELP] " + user + " a utiliser Help | " + time + " Le " + date);
+		bot.guilds.cache.get("554674515028738050").channels.cache.get("803747020522782720").send("[HELP] " + user + " used Help | " + time + " on " + date);
 }
 
 
