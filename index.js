@@ -3,9 +3,6 @@ const fs = require('fs');
 const welcome = require ('./timed/welcome');
 const adieu = require ('./timed/adieu');
 
-var twitchAPI = require("twitch-api-v5");
-twitchAPI.clientID = "vuhqc6a285261lp1yzpanb12tmljsk"
-
 var bot = new Discord.Client();
 
 bot.on('ready', () => {        
