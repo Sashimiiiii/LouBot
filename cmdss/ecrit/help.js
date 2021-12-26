@@ -20,18 +20,18 @@ module.exports.run = async (bot, message, args) => {
 
 		message.channel.send("```ini\n" + str + "```\n");
 		
-	// setTimeout(() => {
-	// 	message.channel.send("Image manipulation");
-	// 	let str = '';
-	// 	var commandFiles = fs.readdirSync('./cmdss/image/').filter(file => file.endsWith('.js'));
-	// 
-	// 	for (const file of commandFiles) {
-	// 		const command = require(`../image/${file}`);
-	// 		str +="[ l!"+ command.name + " ] " + command.description + "\n";
-	// 	}
-	// 
-	// 	message.channel.send("```ini\n" + str + "```\n");
-	// }, 500); 
+	 setTimeout(() => {
+	 	message.channel.send("Image manipulation");
+	 	let str = '';
+		var commandFiles = fs.readdirSync('./cmdss/image/').filter(file => file.endsWith('.js'));
+	
+		for (const file of commandFiles) {
+	 		const command = require(`../image/${file}`);
+	 		str +="[ l!"+ command.name + " ] " + command.description + "\n";
+		}
+	
+	 	message.channel.send("```ini\n" + str + "```\n");
+	 }, 500); 
 
 	// setTimeout(() => {
 	// 	message.channel.send("Vocal Command:");
