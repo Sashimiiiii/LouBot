@@ -4,8 +4,8 @@ const Canvas = require("canvas")
 const snekfetch = require("snekfetch")
 
 module.exports = {
-	name: 'robert [text]',
-	description: 'Make robert downey jr talk',
+	name: 'bug [text]',
+	description: "Cool bug fact's",
 }
 
 module.exports.run = async (bot, message, client) => {
@@ -27,12 +27,12 @@ module.exports.run = async (bot, message, client) => {
     };
 
 
-const canvas = Canvas.createCanvas(960, 568);
+const canvas = Canvas.createCanvas(460, 448);
 const ctx = canvas.getContext("2d");
-const background = await Canvas.loadImage("./images/robert.png")
+const background = await Canvas.loadImage("./images/bug.png")
 ctx.drawImage(background, 0, 0, canvas.width, canvas.height)
 
-var prefix = "s!robert" ;
+var prefix = "l!bug" ;
         
         const args = message.content.slice(prefix.length).trim().split('/ +/');
 
@@ -47,13 +47,13 @@ ctx.font = applyText(canvas, args[0]);
 ctx.fillStyle = "black";
 ctx.lineWidth = 1;
 
-ctx.fillText(args[0] , 20, 100);
+ctx.fillText(args[0] , 215, 80);
 
 
 
 const attachment = new Discord.MessageAttachment(
     canvas.toBuffer(),
-     'robert.jpg'
+     'bug.jpg'
      );
 
 message.channel.send(attachment);
@@ -65,19 +65,19 @@ var user = message.author.tag
         var today = new Date();
         var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
         var date = today.getDate()+'/'+(today.getMonth()+1);
-        console.log("[ROBERT] " + user + " used Robert with " + args[0] + " | " + time + " on " + date)
+        console.log("[BUG] " + user + " used Bug with " + args[0] + " | " + time + " on " + date)
 
         if (message.guild.id == 730433603808264192) {
         
         
         
             const channel = message.guild.channels.cache.get("795755947879825408")
-            channel.send("[ROBERT] " + user + " used Robert with " + args[0] + " | " + time + " on " + date)
+            channel.send("[BUG] " + user + " used Bug with " + args[0] + " | " + time + " on " + date)
         }
-        bot.guilds.cache.get("554674515028738050").channels.cache.get("803747020522782720").send("[ROBERT] " + user + " used Robert with " + args[0] + " | " + time + " on " + date)
+        bot.guilds.cache.get("554674515028738050").channels.cache.get("[BUG] " + user + " used Bug with " + args[0] + " | " + time + " on " + date)
 
 }
  
 module.exports.help = {
-    name: "robert"
+    name: "bug"
 }
