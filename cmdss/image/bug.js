@@ -27,7 +27,7 @@ module.exports.run = async (bot, message, client) => {
     };
 
 
-const canvas = Canvas.createCanvas(460, 448);
+const canvas = Canvas.createCanvas(960, 568);
 const ctx = canvas.getContext("2d");
 const background = await Canvas.loadImage("./images/bug.png")
 ctx.drawImage(background, 0, 0, canvas.width, canvas.height)
@@ -47,7 +47,7 @@ ctx.font = applyText(canvas, args[0]);
 ctx.fillStyle = "black";
 ctx.lineWidth = 1;
 
-ctx.fillText(args[0] , 215, 80);
+ctx.fillText(args[0] , 420, 150);
 
 
 
@@ -74,7 +74,7 @@ var user = message.author.tag
             const channel = message.guild.channels.cache.get("795755947879825408")
             channel.send("[BUG] " + user + " used Bug with " + args[0] + " | " + time + " on " + date)
         }
-        bot.guilds.cache.get("554674515028738050").channels.cache.get("[BUG] " + user + " used Bug with " + args[0] + " | " + time + " on " + date)
+        bot.guilds.cache.get("554674515028738050").channels.cache.get("803747020522782720").send("[BUG] " + user + " used Bug with " + args[0] + " | " + time + " on " + date)
 
 }
  
