@@ -7,7 +7,7 @@ const { createCanvas } = require('canvas');
 var ffmpeg = require('fluent-ffmpeg');
 
 module.exports = {
-	name: 'microwavee @tag',
+	name: 'microwave @tag',
 	description: 'MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM',
 }
 
